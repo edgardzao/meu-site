@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<!--Nome:Edgard Petri - RA: 0040962423041 - Faculdade: Fatec Americana - Curso: Jogos Digitais - Noite - 4º Semestre -->
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>Lista 2 - Exercicio 3</title>
+    <style>
+        .table {
+            border: solid 1px black;
+            border-collapse: collapse;
+            border-spacing: 10px;
+        }
+
+        .espaco {
+            display: flex;
+            width: 50px;
+        }
+
+        .tr {
+            border: none;
+        }
+
+        .td {
+            border: none;
+        }
+    </style>
+</head>
+        <body >
+            <form>
+                <h1 align="center"> Escola Virtual</h1>
+                <h3 align="center"> Formulario de Pré - Cadastro</h3>
+                <hr width="800">
+                <table class="table" cellpadding="10" align="center" width="800">
+                    <tr>
+                        <td class="td" align="left">
+                            <b> Dados Pessoais</b>
+                        </td>
+                    </tr>
+                    <tr class="tr">
+                        <td class="td" align="right">
+                            <label for="nome"> Nome do Aluno:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="nome" name="nome" height="50" size="70" required>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="data"> Nascimento: (dd/mm/aaaa):</label>
+                        </td>
+                        <td>
+                            <input type="text" id="dia" name="dia" height="50" size="5" required>
+                            <label for="data"> /</label>
+                            <input type="text" id="mes" name="mes" height="50" size="5" required>
+                            <label for="data"> /</label>
+                            <input type="text" id="ano" name="ano" height="50" size="10" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="mae">Nome da Mãe:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="mae" name="mae" height="50" size="70" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="pai">Nome do Pai:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="pai" name="pai" height="50" size="70" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="telefone">Telefone:</label>
+                        </td>
+                        <td>
+                            <label for="ddd">DDD: (</label>
+                            <input type="text" id="ddd" name="ddd" height="50" size="3" required>
+                            <label for="tel">) Tel:</label>
+                            <input type="text" id="tel" name="tel" height="50" size="20" required>
+                            <label for="ramal"> Ramal:</label>
+                            <input type="text" id="ramal" name="ramal" height="50" size="10">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="email">E-mail:</label>
+                        </td>
+                        <td>
+                            <input type="email" id="email" name="email" height="50" size="70" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <b>Informações da Matrícula</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" align="char">
+                            <label for="serie">Série:</label>
+                            <br />
+                            <select name="serie" id="serie" required>
+                                <option value="none">Selecione</option>
+                                <option value="preescola">Pré - Escola</option>
+                                <option value="fundamental1">Fundamental 1&ordm; ao 5&ordm; </option>
+                                <option value="fundamental2">Fundamental 6&ordm; ao 9&ordm;</option>
+                                <option value="medio">Ensino Médio</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label for="turno">Turno</label>
+                            <label id="espaco" for="espaco">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            </label>
+                            <label for="atividades">Atividades ExtraCurriculares</label>
+                            <br />
+                            <input type="radio" id="manha" name="turno" value="manha" required>
+                            <label for="manha">Manhã</label><label for="espaco">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </label>
+                            <input type="checkbox" id="informatica" name="informatica" value="informatica" />
+                            <label for="informatica">Informática</label>
+                            <br />
+                            <input type="radio" id="tarde" name="turno" value="tarde" required>
+                            <label for="tarde">Tarde</label>
+                            <label for="espaco">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </label>
+                            <input type="checkbox" id="music" name="music" value="music" />
+                            <label for="music">Música</label>
+                            <br />
+                            <label for="espaco">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </label>
+                            <input type="checkbox" id="balet" name="balet" value="balet" />
+                            <label for="music">Balet</label>
+                            <br />
+                            <label for="espaco">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </label>
+                            <input type="checkbox" id="paint" name="paint" value="paint" />
+                            <label for="music">Pintura</label>
+                            <br />
+                            <label for="espaco">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </label>
+                            <input type="checkbox" id="judo" name="judo" value="judo" />
+                            <label for="music">Judô</label>
+                            <br />
+                            <label for="espaco">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </label>
+                            <input type="checkbox" id="soccer" name="soccer" value="soccer" />
+                            <label for="music">Futebol</label>
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <br />
+                <center>
+   
+    <button type="submit"  align="center">Enviar Formulario</button>
+    <button type="reset" align="center">Limpar Formulario</button>
+</center>
+            </form>
+        </body >
+        </html >

@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<!--Nome: Edgard Petri - RA: 0040962423041 - Faculdade: Fatec Americana - Curso: Jogos Digitais - Noite-->
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>Lista 2 - Exercicio 2</title>
+</head>
+<body>
+    <form>
+        <table align="center" border="1" height="150" width="300">
+            <tr>
+                <td>
+                    <label for="nome">Nome:</label>
+                </td>
+                <td align="center">
+                    <input type="text" id="nome" size="25" name="nome" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sexo">Sexo:</label>
+                </td>
+                <td align="center">
+                    <input type="radio" id="feminino" name="sexo" value="feminino" required>
+                    <label for="feminino">Feminino</label>
+                    <input type="radio" id="masculino" name="sexo" value="masculino" required>
+                    <label for="masculino">Masculino</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Ecolaridade:
+                    <select name="escolaridade" id="escolaridade" required>
+                        <option value="none">Selecione</option> 
+                        <option value="primeiro">1&ordm Grau</option> 
+                        <option value="segundo">2&ordm Grau</option> 
+                        <option value="superior">Superior</option> 
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

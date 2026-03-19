@@ -1,0 +1,242 @@
+
+body{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+background: whitesmoke;
+}
+
+/* HEADER */
+
+header{
+background:white;
+color:white;
+text-align:center;
+padding:20px;
+
+
+}
+
+/* MENU PRINCIPAL */
+
+.menu{
+display:flex;
+justify-content:center;
+list-style:none;
+border-radius: 20px;
+background:blue;
+
+}
+
+/* LINKS */
+
+.menu li{
+position:relative;
+}
+
+.menu li a{
+
+display:block;
+padding:15px 20px;
+color:white;
+text-decoration:none;
+border: 2px solid blue;
+border-radius: 10px;
+font-size: 18px;
+font-family: arial black;
+box-shadow: 0px 5px 5px blue;
+
+}
+
+.menu li a:hover{
+background: darkorange;
+border: 1px solid snow;
+opacity: 4.0;
+border-radius: 10px;
+box-shadow: 5px 5px 5px snow;
+}
+
+/* SUBMENU */
+
+.submenu{
+
+display: none;
+position:absolute;
+top:50px;
+left:0;
+
+background:blue;
+list-style:none;
+border-radius: 20px;
+min-width: 300px;
+
+}
+
+/* ITENS SUBMENU */
+
+.submenu li a{
+
+padding:10px;
+display:block;
+
+}
+
+/* MOSTRAR SUBMENU */
+
+.DropDown:hover .submenu {
+
+display:block;
+
+}
+
+.titulo{
+
+    text-align: center;
+    font-size: 40px;
+    font-family: arial black;
+
+}
+
+/* CONTAINER */
+
+.container{
+max-width:1200px;
+width:100%;
+margin:auto;
+padding:20px;
+
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+
+text-align: center;
+justify-content:center;
+}
+
+/* CARDS */
+
+.card{
+
+flex:1;
+min-width:250px;
+max-width:300px;
+
+background:white;
+padding:30px;
+border-radius:10px;
+color: #222;
+font-family: arial black;
+text-decoration: none;
+margin-left: 5%;
+
+box-shadow:0 5px 15px blue;
+transition:0.3s;
+
+}
+
+.card:hover{
+transform:translateY(-5px);
+background:greenyellow;
+color:black;
+
+}
+
+.hero{
+
+background: linear-gradient(#3498db,#2c3e50);
+color:white;
+
+text-align:center;
+
+padding:100px 20px;
+
+}
+
+.hero h1{
+
+font-size:40px;
+margin-bottom:10px;
+}
+
+.botao{
+
+display:inline-block;
+margin-top:20px;
+
+padding:10px 20px;
+
+background: beige;
+color: blue;
+border: 2px solid white;
+box-shadow: 0 0 10px blue;
+text-decoration:none;
+
+border-radius:5px;
+
+}
+
+.botao:hover {
+
+background-color: blue;
+border: 2px solid blue;
+box-shadow: 0 0 10px blue;
+color: snow;
+}
+
+/* Botao Listas */
+
+.lista{
+
+    display: inline-flex;
+    box-shadow: 0 0 10px blue;
+    text-decoration: none;
+    color: black;
+    padding: 40px;
+    border-radius: 10%;
+    border: 1px solid blue;
+    margin-top: 8%;
+    margin-left: 8%;
+}
+
+/* FOOTER */
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+/* RESPONSIVIDADE */
+
+/* tablet */
+
+@media (max-width:900px){
+
+.container{
+gap:15px;
+}
+
+}
+
+/* celular */
+
+@media (max-width:600px){
+
+.menu{
+flex-direction:column;
+text-align:center;
+}
+
+.container{
+flex-direction:column;
+align-items:center;
+}
+
+.card{
+width:90%;
+}
+
+}

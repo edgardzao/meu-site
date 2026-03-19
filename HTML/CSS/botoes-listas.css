@@ -1,0 +1,35 @@
+.lista0{
+
+max-width: 1200%;
+width: 80%;
+justify-content: center;
+margin: auto;
+padding: 10px;
+
+display:flex;
+flex-wrap:wrap;
+gap: 70px;
+
+text-align: center;
+justify-content:center;
+
+}
+
+.lista1{
+
+flex: auto;    
+background-color: beige;    
+text-decoration: none;
+padding: 20px 10px;
+border: 2px solid blue;
+border-radius: 10px;
+box-shadow: 0 0 10px blue;
+color: blue;
+font-family: arial black;
+
+}
+
+.lista1:hover{
+
+    background-color: slategray;
+}
