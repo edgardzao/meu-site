@@ -106,6 +106,11 @@ display: flex;
         
 }
 
+input[type="checkbox"] {
+  display: none;
+}
+
+
 /* CONTAINER */
 
 .container{
@@ -269,10 +274,7 @@ width:90%;
      
   }
 
-   input[type="checkbox"] {
-  display: none;
-}
-  
+     
     #menucelular{
       display: none;
 
