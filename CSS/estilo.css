@@ -242,7 +242,9 @@ gap:15px;
   display: block;
   flex-direction: column;
   text-align: center;
-  padding: 10px; 
+  font-family: arial black;
+    
+  padding: 5px; 
   background: blue;
   width: 80%;
 }
