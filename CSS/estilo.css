@@ -249,13 +249,13 @@ width:90%;
 
 /* mostra o botão ☰ */
   .submenu {
-    display: block;
+    display: none;
       position: absolute;
   }
 
   /* quando clicar no checkbox → mostra menu */
   #menucelular:checked + .submenu + .menu {
-    display: flex;
+    display: block;
 
 }
 
