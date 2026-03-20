@@ -100,10 +100,10 @@ display:block;
 
 /* Menu Hamburguer - Celular */
 
-#MenuCelular{
+#menucelular:checked ~ .menu {
 
-    display: none;
-
+display: flex;    
+        
 }
 
 /* CONTAINER */
@@ -241,6 +241,11 @@ gap:15px;
   width: 100%;
 }
 
+.submenu{
+    display: none;
+    position: static;
+}    
+    
 .container{
 flex-direction:column;
 align-items:center;
@@ -265,9 +270,12 @@ width:90%;
   }
 
   /* quando clicar no checkbox → mostra menu */
-  #MenuCelular:checked + .Icone-Menu + .menu {
+  #menucelular:checked + .icone-menu + .menu {
     display: flex;
 
 }
 
+   #submenu1:checked + label + .submenu {
+       display: block;
+   } 
 }
