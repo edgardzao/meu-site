@@ -269,7 +269,7 @@ width:90%;
 }
     
     /* mostra o botão ☰ */
-  .Icone-Menu {
+  .icone-menu {
     display: block;
      
   }
@@ -281,12 +281,12 @@ width:90%;
   }
     
   /* quando clicar no checkbox → mostra menu */
-  #menucelular:checked ~ .icone-menu ~ .menu1 {
+  #menucelular:checked ~ .icone-menu ~ .menu {
     display: flex;
 
 }
 
-   #submenu1:checked ~ label ~ .submenu {
+   #submenu1:checked ~ label ~ .submenu1 {
        display: block;
 } 
 
