@@ -100,7 +100,7 @@ display:block;
 
 /* Menu Hamburguer - Celular */
 
-#menucelular{
+#MenuCelular{
 
     display: none;
 
@@ -265,7 +265,7 @@ width:90%;
   }
 
   /* quando clicar no checkbox → mostra menu */
-  #menucelular:checked + .Icone-Menu + .menu {
+  #MenuCelular:checked + .Icone-Menu + .menu {
     display: flex;
 
 }
