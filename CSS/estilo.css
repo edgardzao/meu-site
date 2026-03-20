@@ -281,7 +281,7 @@ width:90%;
   }
     
   /* quando clicar no checkbox → mostra menu */
-  #menucelular:checked ~ .icone-menu ~ .menu {
+  #menucelular:checked ~ .icone-menu ~ .menu1 {
     display: flex;
 
 }
