@@ -249,7 +249,7 @@ width:90%;
 
 /* mostra o botão ☰ */
   .submenu {
-    display: block;
+    display: none;
   }
 
   /* quando clicar no checkbox → mostra menu */
