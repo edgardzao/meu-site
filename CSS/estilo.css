@@ -266,7 +266,7 @@ width:90%;
 
   /* quando clicar no checkbox → mostra menu */
   #menucelular:checked + .Icone-Menu + .menu {
-    display: none;
+    display: flex;
 
 }
 
