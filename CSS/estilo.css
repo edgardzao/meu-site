@@ -269,13 +269,19 @@ width:90%;
      
   }
 
+  #menucelular{
+      display: none;
+
+  }
+    
   /* quando clicar no checkbox → mostra menu */
-  #menucelular:checked + .icone-menu + .menu {
+  #menucelular:checked ~ .icone-menu ~ .menu {
     display: flex;
 
 }
 
-   #submenu1:checked + label + .submenu {
+   #submenu1:checked ~ label ~ .submenu {
        display: block;
-   } 
+} 
+
 }
