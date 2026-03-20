@@ -242,8 +242,9 @@ gap:15px;
   display: block;
   flex-direction: column;
   text-align: center;
+  padding: 10px; 
   background: blue;
-  width: 100%;
+  width: 80%;
 }
 
 .submenu{
