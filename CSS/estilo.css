@@ -233,9 +233,12 @@ gap:15px;
 
 @media (max-width:600px){
 
-.menu{
-flex-direction:column;
-text-align:center;
+.menu {
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  background: blue;
+  width: 100%;
 }
 
 .container{
@@ -247,14 +250,22 @@ align-items:center;
 width:90%;
 }
 
-/* mostra o botão ☰ */
-  .submenu {
-    display: flex;
+.Icone-Menu {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: blue;
+  padding: 10px;
+}
+    
+    /* mostra o botão ☰ */
+  .Icone-Menu {
+    display: block;
      
   }
 
   /* quando clicar no checkbox → mostra menu */
-  #menucelular:checked + .submenu + .menu {
+  #menucelular:checked + .Icone-Menu + .menu {
     display: none;
 
 }
