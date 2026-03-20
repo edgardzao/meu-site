@@ -249,7 +249,7 @@ width:90%;
 
 /* mostra o botão ☰ */
   .submenu {
-    display: none;
+    display: block;
       position: absolute;
   }
 
