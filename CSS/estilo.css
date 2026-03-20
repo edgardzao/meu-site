@@ -269,7 +269,11 @@ width:90%;
      
   }
 
-  #menucelular{
+   input[type="checkbox"] {
+  display: none;
+}
+  
+    #menucelular{
       display: none;
 
   }
