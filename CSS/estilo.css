@@ -204,6 +204,8 @@ color: snow;
     display: inline-flex;
     box-shadow: 0 0 10px blue;
     text-decoration: none;
+   
+    justify-content: center;
     color: black;
     padding: 40px;
     border-radius: 10%;
