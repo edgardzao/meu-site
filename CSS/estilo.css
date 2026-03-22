@@ -149,7 +149,6 @@ transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-5px);
 background:greenyellow;
 color:black;
 
